@@ -1,0 +1,30 @@
+{
+  "PASATIEMPO" : {
+    "id1" : {
+      "PAS_NOMBRE" : "Futbol",
+      "PAS_UPPER_NOMBRE" : "FUTBOL"
+    },
+    "id2" : {
+      "PAS_NOMBRE" : "Basket",
+      "PAS_UPPER_NOMBRE" : "BASKET"
+    },
+    "id3" : {
+      "PAS_NOMBRE" : "Bailar",
+      "PAS_UPPER_NOMBRE" : "BAILAR"
+    }
+  },
+  "ROL" : {
+    "Administrador" : {
+      "ROL_DESCRIPCION" : "Administra el sistema.",
+      "ROL_UPPER_ID" : "ADMINISTRADOR"
+    },
+    "Cliente" : {
+      "ROL_DESCRIPCION" : "Hace cosas.",
+      "ROL_UPPER_ID" : "CLIENTE"
+    },
+    "Invitado" : {
+      "ROL_DESCRIPCION" : "No hace nada.",
+      "ROL_UPPER_ID" : "INVITADO"
+    }
+  }
+}
