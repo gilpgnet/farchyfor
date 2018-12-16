@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Usuario Nuevo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="js/cmp/herramientas-detalle.js"></script>
+    <script type="module" src="js/cmp/campos-usuario.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <form name="vista">
+      <header>
+        <h1>Usuario Nuevo</h1>
+        <herramientas-detalle agrega></herramientas-detalle>
+      </header>
+      <main role="main">
+        <p>
+          <label accesskey="U">
+            Cue (5 a 16 letras o dígitos)
+            <input name="cue" type="text" autofocus>
+          </label>
+        </p>
+        <campos-usuario></campos-usuario>
+      </main>
+    </form>
+    <script src="/__/firebase/5.7.0/firebase-app.js"></script>
+    <script src="/__/firebase/5.7.0/firebase-database.js"></script>
+    <script src="/__/firebase/5.7.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script type="module" src="js/ctrlUsuarioNuevo.js"></script>
+  </body>
+</html>

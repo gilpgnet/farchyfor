@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cargando usuario...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="js/cmp/herramientas-detalle.js"></script>
+    <script type="module" src="js/cmp/campos-usuario.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <form name="vista">
+      <header>
+        <h1><output name="titulo">Cargando usuario…</output></h1>
+        <herramientas-detalle></herramientas-detalle>
+      </header>
+      <main role="main">
+        <campos-usuario></campos-usuario>
+      </main>
+    </form>
+    <script src="/__/firebase/5.7.0/firebase-app.js"></script>
+    <script src="/__/firebase/5.7.0/firebase-database.js"></script>
+    <script src="/__/firebase/5.7.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script type="module" src="js/ctrlUsuario.js"></script>
+  </body>
+</html>

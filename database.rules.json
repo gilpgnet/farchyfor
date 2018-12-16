@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "PASATIEMPO": {
+      ".indexOn": "PAS_UPPER_NOMBRE"
+    },
+    "ROL": {
+      ".indexOn": "ROL_UPPER_ID"
+    }
+    },
+    "USUARIO": {
+      ".indexOn": "USU_UPPER_CUE"
+    }
+  }
+}
