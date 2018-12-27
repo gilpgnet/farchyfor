@@ -85,7 +85,7 @@ export async function subeArchivo(file, nombre) {
       nombre = file.files[0];
     }
     // Agrega el archivo seleccionado al servicio storage de Firebase.
-    const snapshot = await firebase.storage().ref(nombre).put(seleccion)
+    const snapshot = await firebase.storage().ref(nombre).put(file.files[0])
     // Se descarga la url para mostrar el archivo en una img.
     return await snapshot.ref.getDownloadURL();
   } else {

@@ -7,7 +7,6 @@
     },
     "ROL": {
       ".indexOn": "ROL_UPPER_ID"
-    }
     },
     "USUARIO": {
       ".indexOn": "USU_UPPER_CUE"

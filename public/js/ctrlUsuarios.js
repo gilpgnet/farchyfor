@@ -14,6 +14,6 @@ firebase.database().ref("USUARIO").orderByChild("USU_UPPER_CUE").on("value",
       };
       filas.push(fila);
     });
-    lista.muestra("usuario.html?key=", respuesta.lista);
+    lista.muestra("usuario.html?key=", filas);
   },
   muestraError);

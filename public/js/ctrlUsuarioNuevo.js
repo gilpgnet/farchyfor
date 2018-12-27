@@ -17,14 +17,16 @@ avatar.addEventListener("change", muestraArchivoSeleccionado.bind(null, img));
 firebase.database().ref("PASATIEMPO").orderByChild("PAS_UPPER_NOMBRE").once("value",
   dataSnapshot => {
     const filas = [{ id: "", texto: "Sin pasatiempo" }];
-    dataSnapshot.forEach(ds => filas.push({ id: ds.key, texto: ds.val().PAS_NOMBRE }));
+    dataSnapshot.forEach(ds => {filas.push({ id: ds.key, texto: ds.val().PAS_NOMBRE });});
     agregaOpciones(vista.pasatiempo, seleccion(), filas);
   },
   muestraError);
 firebase.database().ref("ROL").orderByChild("ROL_UPPER_ID").once("value",
   dataSnapshot => {
     const filas = [];
-    dataSnapshot.forEach(ds => filas.push({ id: ds.key, texto: ds.val().ROL_DESCRIPCION }));
+    dataSnapshot.forEach(ds => {
+      filas.push({ id: ds.key, texto: ds.key + ": " + ds.val().ROL_DESCRIPCION });
+    });
     agregaOpciones(vista.roles, seleccion(), filas);
   },
   muestraError);
