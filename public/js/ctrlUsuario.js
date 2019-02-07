@@ -51,7 +51,7 @@ async function guarda(evt) {
   try {
     evt.preventDefault();
     const cambios = {
-      PAS_ID: vista.pasatiempo.value ? null : vista.pasatiempo.value,
+      PAS_ID: vista.pasatiempo.value ? vista.pasatiempo.value : null,
       ROL_IDS: getValores(vista.roles)
     }
     if (archivoSeleccionado(avatar)) {
