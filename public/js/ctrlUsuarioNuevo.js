@@ -52,7 +52,7 @@ function guarda(evt) {
               await ref.set({
                 USU_CUE,
                 USU_AVATAR,
-                PAS_ID: vista.pasatiempo.value ? null : vista.pasatiempo.value,
+                PAS_ID: vista.pasatiempo.value ? vista.pasatiempo.value : null,
                 ROL_IDS: getValores(vista.roles),
                 USU_UPPER_CUE
               });
