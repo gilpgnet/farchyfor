@@ -27,4 +27,4 @@ El archivo [farchyfor-export.json](/farchyfor-export.json) contiene los datos in
 - [database.rules.json](/database.rules.json)
 - [farchyfor-export.json](/farchyfor-export.json)
 - [firebase.json](/firebase.json)
-- [database.rules.json](/storage.rules.json)
+- [database.rules](/storage.rules)
